@@ -1,0 +1,36 @@
+.App {
+    text-align: center;
+    font-family: Arial,  sans-serif;
+  }
+  
+.App-logo {
+    animation: App-logo-spin infinite 20s linear;
+    height: 80px;
+    margin-top: -20px;
+  }
+.App-post{
+  padding: 0 30px;
+}
+.App-post{
+  text-align: left;
+}
+.App-post img{
+  display: flex;
+  margin: 0 auto;
+}
+.App-post-date{
+  padding: 0 30px;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 18px;
+  color: #999999;
+  text-align: left;
+}
+.App-post-title{
+  padding: 0 30px;
+  margin: 20px 0 ;
+  font-size: 36px;
+  font-weight: normal;
+  color: #396A9F;
+  text-align: left;
+}

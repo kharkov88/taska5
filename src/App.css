@@ -1,0 +1,51 @@
+html,body{
+  width: 100%;
+  height: 100%;
+}
+.App {
+  text-align: center;
+  font-family: Arial,  sans-serif;
+  overflow-x: hidden;
+}
+.App a{
+  color: #396A9F;
+  text-decoration: none;
+}
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+  margin-top: -20px;
+}
+
+.App-header {
+  background-color: #396A9F;
+  width: 100%;
+  height: 40px;
+  padding: 20px;
+  color: white;
+}
+.App-news-title{
+  margin: 20px 0;
+  padding: 30px 0;
+  overflow: hidden;
+}
+.App-news-title>h2{
+  font-size: 36px;
+  color: #2e2e2e;
+  font-weight: normal;
+}
+.App-title {
+  font-size: 1.5em;
+  position: absolute;
+  top: 10px;
+  left: 50px;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

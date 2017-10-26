@@ -1,0 +1,28 @@
+.App-content .post{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 30px 30px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid grey;
+}
+.App-content .post .post-data{
+    width: 900px;
+    border: 0px solid grey;
+}
+.App-content .post .post-image{
+    width: 240px;
+    border: 0px solid grey;
+}
+.App-content .post .post-date{
+    font-style: italic;
+    font-weight: normal;
+    font-size: 18px;
+    color: #999999;
+}
+.App-content .post .post-title{
+    font-size: 36px;
+    font-weight: normal;
+    color: #396A9F;
+}
