@@ -1,15 +1,20 @@
 import React, { Component } from 'react';
-import {connect,} from 'react-redux';
+import {connect} from 'react-redux';
 import {bindActionCreators} from'redux'
 import {Router,Route} from 'react-router'
 
 import logo from './logo.svg';
 import './App.css';
-import {Content} from './components/content'
-import {Post} from './components/post'
-import * as actions from './redux/actions'
+import {Content} from './content'
+import {Post} from './post'
+import * as actions from '../redux/actions'
 
 class _App extends Component {
+
+  componentDidMount(){
+    let {actions} = this.props
+    actions.getNews()
+  }
   getPosts(){
     const {news,actions} = this.props
     if(news!=undefined){

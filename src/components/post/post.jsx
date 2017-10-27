@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from'react-router'
-import logo from '../../logo.svg';
+import logo from './logo.svg';
 import './post.css';
 import {connect} from 'react-redux';
 
@@ -18,7 +18,7 @@ let _Post = (props)=>{
             <Link to="/">Назад к новостям</Link>
         </section>
         <section className="App-post-title">{post.title}</section>
-        <section className="App-post-date">опубликовано {post.date.substr(0,10)}</section>
+        <section className="App-post-date">{post.date!=undefined&&`опубликовано ${post.date.substr(0,10)}`}</section>
         <section className="App-post" dangerouslySetInnerHTML={{__html: post.post}}/>
         
     </div>)

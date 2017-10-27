@@ -10,7 +10,7 @@ import {syncHistoryWithStore} from 'react-router-redux'
 
 
 import './index.css';
-import App from './App';
+import App from './components/App';
 import registerServiceWorker from './registerServiceWorker';
 import reducer from './redux/reducer'
 import {getNews} from './redux/actions'
@@ -22,17 +22,14 @@ const store = createStore(
     applyMiddleware(logger,thunk)
 )
 const history = syncHistoryWithStore(browserHistory,store);
-store.dispatch(getNews())
-
 
 ReactDOM.render(
     <Provider store={store}>
-    <Router history={history}>
-          <Route path="/" component={App} />
-          <Route path="/*" component={Post} />
-    </Router>
-    </Provider>
-,
+        <Router history={history}>
+            <Route path="/" component={App} />
+            <Route path="/*" component={Post} />
+        </Router>
+    </Provider>,
     document.getElementById('root')
 );
 registerServiceWorker();
