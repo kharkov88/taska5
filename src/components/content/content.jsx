@@ -12,6 +12,9 @@ export let Content = (props)=>{
     } 
     function handleClick(){
         onclick(obj_post)
+        window.localStorage.post = post.content
+        window.localStorage.date = post.date
+        window.localStorage.title = post.title
         window.scrollTo(0,0)
     }
     return (      

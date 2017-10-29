@@ -27,7 +27,7 @@ ReactDOM.render(
     <Provider store={store}>
         <Router history={history}>
             <Route path="/" component={App} />
-            <Route path="/*" component={Post} />
+            <Route path="/:dinamic" component={Post} />
         </Router>
     </Provider>,
     document.getElementById('root')

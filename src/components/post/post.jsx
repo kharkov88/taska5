@@ -17,9 +17,9 @@ let _Post = (props)=>{
             <h2>НОВОСТИ MOBILIZETODAY.RU</h2>
             <Link to="/">Назад к новостям</Link>
         </section>
-        <section className="App-post-title">{post.title}</section>
-        <section className="App-post-date">{post.date!=undefined&&`опубликовано ${post.date.substr(0,10)}`}</section>
-        <section className="App-post" dangerouslySetInnerHTML={{__html: post.post}}/>
+        <section className="App-post-title">{post.title||window.localStorage.title}</section>
+        <section className="App-post-date">{`опубликовано ${post.date!=undefined&&post.date.substr(0,10)||window.localStorage.date.substr(0,10)}`}</section>
+        <section className="App-post" dangerouslySetInnerHTML={{__html: post.post||window.localStorage.post}}/>
         
     </div>)
 }
